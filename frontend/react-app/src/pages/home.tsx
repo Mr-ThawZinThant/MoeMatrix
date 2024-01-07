@@ -1,12 +1,35 @@
-import Avatar  from "/home/chocoharu/Workspaces/moematrix/frontend/react-app/src/components/UI/avatar.tsx";
+import ProfileComponent from "../../src/components/UI/profile.tsx";
+
+const header = () => { 
+    return (
+        ProfileComponent()
+    );
+};
+
+const main = () => {
+    return (
+        <h1>This is main</h1>
+    );
+};
+
+const footer = () => {
+    return (
+        <h1>This is footer</h1>
+    );
+};
+
 export default function Home() {
     return (
         <div>
-            <Avatar
-                imageUrl=""
-                alt="User Avatar"
-                size="medium"
-            />
+            <header>
+                {header()}
+            </header>
+            <main>
+                {main()}
+            </main>
+            <footer>
+                {footer()}
+            </footer>
         </div>
-    )
+    );
 };
