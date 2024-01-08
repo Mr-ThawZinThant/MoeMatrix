@@ -1,8 +1,9 @@
-import ProfileComponent from "../../src/components/UI/profile.tsx";
+import MyComponent from "../components/test/backendApicalltest";
 
 const header = () => { 
     return (
-        ProfileComponent()
+        <h1>This is header   <MyComponent /> </h1>
+      
     );
 };
 
